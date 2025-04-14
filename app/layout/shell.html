@@ -1,0 +1,9 @@
+<!-- app/layout/shell.html -->
+<div ng-controller="ShellController as vm">
+    <topnav ng-if="!vm.isAuthPage()"></topnav>
+  
+    <div class="container mt-4">
+      <div ng-view></div>
+    </div>
+  </div>
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="offMetaTFT">
+<head>
+  <meta charset="utf-8">
+  <title>Off‑Meta TFT Blog</title>
+
+  <!-- AngularJS core -->
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+
+  <!-- App config -->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+
+  <!-- Services -->
+  <script src="app/services/api.service.js"></script>
+
+  <!-- Layout -->
+  <script src="app/layout/shell.controller.js"></script>
+  <script src="app/layout/topnav.controller.js"></script>
+
+  <!-- Users module -->
+  <script src="app/users/users.routes.js"></script>
+  <script src="app/users/user-detail.controller.js"></script>
+
+  <!-- auth -->
+  <script src="app/auth/login.controller.js"></script>
+  <script src="app/auth/register.controller.js"></script>
+
+
+  <script src="app/layout/topnav.directive.js"></script>
+  <!-- Add more module scripts here... -->
+</head>
+<body>
+
+  <!-- Now put ng-include here INSIDE body -->
+  <div ng-include="'app/layout/shell.html'"></div>
+
+</body>
+</html>

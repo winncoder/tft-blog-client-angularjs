@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Register</h2>
+    <form ng-submit="vm.register()">
+      <div>
+        <label>Username</label>
+        <input type="text" ng-model="vm.user.username" required>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" ng-model="vm.user.email" required>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" ng-model="vm.user.password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
