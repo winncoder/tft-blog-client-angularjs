@@ -1,0 +1,19 @@
+<div class="container" ng-if="!vm.loading">
+    <h2>Edit User</h2>
+    <form ng-submit="vm.updateUser()">
+      <div>
+        <label>Username</label>
+        <input type="text" ng-model="vm.user.username" required />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" ng-model="vm.user.email" required />
+      </div>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  
+  <div ng-if="vm.loading">
+    <p>Loading...</p>
+  </div>
+  

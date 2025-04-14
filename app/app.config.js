@@ -8,6 +8,11 @@
     function configureRoutes($routeProvider, $locationProvider) {
       $locationProvider.hashPrefix('');
       $routeProvider
+        .when('/403', {
+          templateUrl: 'app/errors/403.html',
+          controller: 'ErrorController',
+          controllerAs: 'vm'
+        })
         .when('/post', {
           templateUrl: 'app/posts/posts.html',
           controller: 'PostsCtrl',
@@ -36,6 +41,11 @@
         .when('/register', {
           templateUrl: 'app/auth/register.html',
           controller: 'RegisterController',
+          controllerAs: 'vm'
+        })
+        .when('/user/:id/edit', {
+          templateUrl: 'app/users/user-edit.html',
+          controller: 'UserEditController',
           controllerAs: 'vm'
         })
         .otherwise({ redirectTo: '/post' });

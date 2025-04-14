@@ -8,7 +8,7 @@
 
     ShellController.$inject = ['$location'];
   
-    function ShellController() {
+    function ShellController($location) {
       var vm = this;
       vm.appTitle = 'Off-Meta TFT Blog';
 

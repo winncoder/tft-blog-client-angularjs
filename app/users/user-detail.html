@@ -1,15 +1,17 @@
 <div class="container" ng-if="!vm.loading">
-    <h2>User Profile</h2>
-  
-    <div class="card">
-      <h3>{{ vm.user.username }}</h3>
-      <!-- <img ng-src="{{ vm.user.avatar }}" alt="{{ vm.user.username }}'s avatar" class="avatar"> -->
-      <p>Email: {{ vm.user.email }}</p>
-      <p>Joined: {{ vm.user.created_at | date:'medium' }}</p>
-    </div>
+  <h2>User Profile</h2>
+
+  <div class="card">
+    <h3>{{ vm.user.username }}</h3>
+    <!-- <img ng-src="{{ vm.user.avatar }}" alt="{{ vm.user.username }}'s avatar" class="avatar"> -->
+    <p>Email: {{ vm.user.email }}</p>
+    <p>Joined: {{ vm.user.created_at | date:'medium' }}</p>
+
+    <!-- Edit Button -->
+    <button class="btn btn-primary" ng-click="vm.goToEditPage()">Edit Information</button>
   </div>
-  
-  <div ng-if="vm.loading">
-    <p>Loading user profile...</p>
-  </div>
-  
+</div>
+
+<div ng-if="vm.loading">
+  <p>Loading user profile...</p>
+</div>
