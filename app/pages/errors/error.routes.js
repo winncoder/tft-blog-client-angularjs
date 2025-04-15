@@ -10,12 +10,12 @@
     function errorRoutes($routeProvider) {
       $routeProvider
         .when('/403', {
-          templateUrl: 'app/errors/403.html',
+          templateUrl: 'app/pages/errors/403.html',
           controller: 'ErrorController',
           controllerAs: 'vm'
         })
         .when('/404', {
-          templateUrl: 'app/errors/404.html',
+          templateUrl: 'app/pages/errors/404.html',
           controller: 'ErrorController',
           controllerAs: 'vm'
         });

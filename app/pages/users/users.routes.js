@@ -10,12 +10,12 @@
     function userRoutes($routeProvider) {
       $routeProvider
         .when('/user/:id', {
-          templateUrl: 'app/users/user-detail.html',
+          templateUrl: 'app/pages/users/user-detail.html',
           controller: 'UserDetailCtrl',
           controllerAs: 'vm'
         })
         .when('/users/:id/edit', {
-          templateUrl: 'app/users/user-edit.html',
+          templateUrl: 'app/pages/users/user-edit.html',
           controller: 'UserEditController',
           controllerAs: 'vm'
         })

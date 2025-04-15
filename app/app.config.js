@@ -14,37 +14,37 @@
           controllerAs: 'vm'
         })
         .when('/post', {
-          templateUrl: 'app/posts/posts.html',
+          templateUrl: 'app/pages/posts/posts.html',
           controller: 'PostsCtrl',
           controllerAs: 'vm'
         })
         .when('/post/:id', {
-          templateUrl: 'app/posts/post-detail.html',
+          templateUrl: 'app/pages/posts/post-detail.html',
           controller: 'PostDetailCtrl',
           controllerAs: 'vm'
         })
         .when('/user', {
-          templateUrl: 'app/users/users.html',
+          templateUrl: 'app/pages/users/users.html',
           controller: 'UsersCtrl',
           controllerAs: 'vm'
         })
         .when('/user/:id', {
-          templateUrl: 'app/users/user-detail.html',
+          templateUrl: 'app/pages/users/user-detail.html',
           controller: 'UserDetailCtrl',
           controllerAs: 'vm'
         })
         .when('/login', {
-          templateUrl: 'app/auth/login.html',
+          templateUrl: 'app/pages/auth/login.html',
           controller: 'LoginController',
           controllerAs: 'vm'
         })
         .when('/register', {
-          templateUrl: 'app/auth/register.html',
+          templateUrl: 'app/pages/auth/register.html',
           controller: 'RegisterController',
           controllerAs: 'vm'
         })
         .when('/user/:id/edit', {
-          templateUrl: 'app/users/user-edit.html',
+          templateUrl: 'app/pages/users/user-edit.html',
           controller: 'UserEditController',
           controllerAs: 'vm'
         })

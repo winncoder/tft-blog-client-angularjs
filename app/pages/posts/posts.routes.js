@@ -10,7 +10,7 @@
     function userRoutes($routeProvider) {
       $routeProvider
         .when('/post/', {
-          templateUrl: 'app/posts/posts.html',
+          templateUrl: 'app/pages/posts/posts.html',
         });
     }
   })();
